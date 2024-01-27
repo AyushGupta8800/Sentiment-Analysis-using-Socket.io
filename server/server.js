@@ -72,7 +72,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  `mongodb+srv://ayush:a12345@cluster0.o2seoa3.mongodb.net/?retryWrites=true&w=majority`,
+  `${MONGOURL}`,
   {
       useNewUrlParser: true,
       useUnifiedTopology: true,
